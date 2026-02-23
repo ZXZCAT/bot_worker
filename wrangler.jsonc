@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "my-qq-bot",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-02-21",
+  "routes": [
+    {
+      "pattern": "你的域名",
+      "custom_domain": true
+    }
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "CHAT_KV",
+      "id": "你的KV命名空间ID"
+    }
+  ],
+  "ai": {
+    "binding": "AI"
+  },
+  "vars": {
+  "BOT_QQ": "你的机器人QQ号"
+}
+}
